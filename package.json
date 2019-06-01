@@ -14,7 +14,8 @@
     "http-proxy-middleware": "^0.19.1",
     "node-sass": "^4.12.0",
     "string-loader": "^0.0.1",
-    "webpack-stream": "^5.2.1"
+    "webpack-stream": "^5.2.1",
+    "yo3": "^3.1.8"
   },
   "scripts": {
     "dev": "gulp -f gulpfile-dev.js",
