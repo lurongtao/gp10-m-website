@@ -149,7 +149,7 @@ eval("// module.exports = 'zhaoqian'\n// export const name = 'zhaoqian'\nmodule.
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("module.exports = \"<div>{{title}}</div>\"\n\n//# sourceURL=webpack:///./src/views/aa.art?");
+eval("throw new Error(\"Module parse failed: Unexpected token (1:0)\\nYou may need an appropriate loader to handle this file type.\\n> <div>{{title}}</div>\");\n\n//# sourceURL=webpack:///./src/views/aa.art?");
 
 /***/ })
 
