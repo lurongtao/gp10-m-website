@@ -11,11 +11,11 @@ $_base: (
     // root字号类型：normal | scaling
     // normal表示root字号使用 `font-size-root`
     // scaling表示root字号使用 `font-size-root-scaling`
-    responsive-type:        normal,
+    responsive-type:        scaling,
     // html root使用100px，方便rem单位的换算
     font-size-root:         100px,
     // 适配：用于做元素随屏幕大小而变化的情况
-    font-size-root-scaling: 31.25vw,
+    font-size-root-scaling: 26.666667vw,
     // body的默认字号（文档基准字号）
     // chrome37-45/opera24-33在body上使用rem时有个bug（其他版本未测），后续版本已被修复:
     // 只要引用了外部样式，不论里面的内容是什么，body上的rem就会失效

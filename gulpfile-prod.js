@@ -5,6 +5,7 @@ const path = require('path')
 
 const webpackStream = require('webpack-stream')
 const gulpSass = require('gulp-sass')
+const cleanCSS = require('gulp-clean-css');
 
 function copyhtml() {
   return src('./*.html')
@@ -76,6 +77,7 @@ function revColl() {
 function packCSS() {
   return src('./src/styles/app.scss')
     .pipe(gulpSass().on('error', gulpSass.logError))
+    .pipe(cleanCSS({compatibility: 'ie8'}))
     .pipe(rev())
     .pipe(dest('./dist/styles'))
     .pipe(rev.manifest())

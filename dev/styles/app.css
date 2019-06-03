@@ -527,7 +527,7 @@ body {
 html {
   background-color: #eee;
   color: #212121;
-  font-size: 100px;
+  font-size: 26.66667vw;
   -webkit-user-select: none;
   user-select: none; }
 
@@ -733,10 +733,179 @@ a {
   flex-direction: column; }
   .container header {
     height: .44rem;
-    background: #00b38a; }
+    background: #00b38a;
+    font-size: .18rem;
+    color: #fff;
+    line-height: .44rem;
+    text-align: center; }
   .container main {
-    flex: 1; }
+    flex: 1;
+    overflow-y: auto; }
+    .container main > div:first-child {
+      height: .44rem;
+      background: #fff;
+      padding: 0 .15rem;
+      display: flex;
+      align-items: center;
+      position: relative; }
+      .container main > div:first-child::after {
+        pointer-events: none;
+        position: absolute;
+        z-index: 999;
+        top: 0;
+        left: 0;
+        content: "\0020";
+        border-color: #ccc;
+        border-style: solid;
+        border-width: 0 0 1px 0;
+        -webkit-transform-origin: 0 0;
+        transform-origin: 0 0; }
+        @media (max--moz-device-pixel-ratio: 1.49), (-webkit-max-device-pixel-ratio: 1.49), (max-device-pixel-ratio: 1.49), (max-resolution: 143dpi), (max-resolution: 1.49dppx) {
+          .container main > div:first-child::after {
+            width: 100%;
+            height: 100%; } }
+        @media (min--moz-device-pixel-ratio: 1.5) and (max--moz-device-pixel-ratio: 2.49), (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-max-device-pixel-ratio: 2.49), (min-device-pixel-ratio: 1.5) and (max-device-pixel-ratio: 2.49), (min-resolution: 144dpi) and (max-resolution: 239dpi), (min-resolution: 1.5dppx) and (max-resolution: 2.49dppx) {
+          .container main > div:first-child::after {
+            width: 200%;
+            height: 200%;
+            -webkit-transform: scale(0.5);
+            transform: scale(0.5); } }
+        @media (min--moz-device-pixel-ratio: 2.5), (-webkit-min-device-pixel-ratio: 2.5), (min-device-pixel-ratio: 2.5), (min-resolution: 240dpi), (min-resolution: 2.5dppx) {
+          .container main > div:first-child::after {
+            width: 300%;
+            height: 300%;
+            -webkit-transform: scale(0.33333);
+            transform: scale(0.33333); } }
+      .container main > div:first-child h3 {
+        font-weight: 100;
+        font-size: .14rem;
+        line-height: .44rem;
+        flex: 1; }
+      .container main > div:first-child button {
+        padding: 0 .2rem;
+        border-radius: .15rem;
+        height: .3rem;
+        width: .9rem;
+        background-color: #f5f5f5;
+        color: #00b38a;
+        border: 0; }
+    .container main > ul li {
+      display: flex;
+      padding: .14rem;
+      background: #fff;
+      position: relative; }
+      .container main > ul li::after {
+        pointer-events: none;
+        position: absolute;
+        z-index: 999;
+        top: 0;
+        left: 0;
+        content: "\0020";
+        border-color: #ccc;
+        border-style: solid;
+        border-width: 0 0 1px 0;
+        -webkit-transform-origin: 0 0;
+        transform-origin: 0 0; }
+        @media (max--moz-device-pixel-ratio: 1.49), (-webkit-max-device-pixel-ratio: 1.49), (max-device-pixel-ratio: 1.49), (max-resolution: 143dpi), (max-resolution: 1.49dppx) {
+          .container main > ul li::after {
+            width: 100%;
+            height: 100%; } }
+        @media (min--moz-device-pixel-ratio: 1.5) and (max--moz-device-pixel-ratio: 2.49), (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-max-device-pixel-ratio: 2.49), (min-device-pixel-ratio: 1.5) and (max-device-pixel-ratio: 2.49), (min-resolution: 144dpi) and (max-resolution: 239dpi), (min-resolution: 1.5dppx) and (max-resolution: 2.49dppx) {
+          .container main > ul li::after {
+            width: 200%;
+            height: 200%;
+            -webkit-transform: scale(0.5);
+            transform: scale(0.5); } }
+        @media (min--moz-device-pixel-ratio: 2.5), (-webkit-min-device-pixel-ratio: 2.5), (min-device-pixel-ratio: 2.5), (min-resolution: 240dpi), (min-resolution: 2.5dppx) {
+          .container main > ul li::after {
+            width: 300%;
+            height: 300%;
+            -webkit-transform: scale(0.33333);
+            transform: scale(0.33333); } }
+      .container main > ul li > img {
+        width: .6rem;
+        height: .6rem; }
+      .container main > ul li > div.item-desc {
+        flex: 1;
+        padding-left: .1rem; }
+        .container main > ul li > div.item-desc h2 {
+          font-size: .16rem;
+          margin-bottom: .06rem;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box !important;
+          -webkit-line-clamp: 2;
+          word-wrap: break-word;
+          word-break: break-all; }
+        .container main > ul li > div.item-desc p.item-info {
+          line-height: .15rem;
+          height: .15rem;
+          margin-bottom: .06rem;
+          display: flex; }
+          .container main > ul li > div.item-desc p.item-info span.item-pos {
+            flex: 1;
+            display: block; }
+            .container main > ul li > div.item-desc p.item-info span.item-pos b {
+              width: 100%;
+              display: block;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap; }
+          .container main > ul li > div.item-desc p.item-info span.item-salary {
+            width: .8rem;
+            font-size: .16rem;
+            display: block;
+            color: #00b38a;
+            text-align: right; }
+        .container main > ul li > div.item-desc p.item-time {
+          color: #888;
+          font-size: .12rem; }
   .container nav {
     height: .44rem; }
     .container nav ul {
-      height: .44rem; }
+      height: .44rem;
+      display: flex;
+      background: #f6f6f6;
+      color: #c2cfcc;
+      position: relative; }
+      .container nav ul::after {
+        pointer-events: none;
+        position: absolute;
+        z-index: 999;
+        top: 0;
+        left: 0;
+        content: "\0020";
+        border-color: #ccc;
+        border-style: solid;
+        border-width: 1px 0 0 0;
+        -webkit-transform-origin: 0 0;
+        transform-origin: 0 0; }
+        @media (max--moz-device-pixel-ratio: 1.49), (-webkit-max-device-pixel-ratio: 1.49), (max-device-pixel-ratio: 1.49), (max-resolution: 143dpi), (max-resolution: 1.49dppx) {
+          .container nav ul::after {
+            width: 100%;
+            height: 100%; } }
+        @media (min--moz-device-pixel-ratio: 1.5) and (max--moz-device-pixel-ratio: 2.49), (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-max-device-pixel-ratio: 2.49), (min-device-pixel-ratio: 1.5) and (max-device-pixel-ratio: 2.49), (min-resolution: 144dpi) and (max-resolution: 239dpi), (min-resolution: 1.5dppx) and (max-resolution: 2.49dppx) {
+          .container nav ul::after {
+            width: 200%;
+            height: 200%;
+            -webkit-transform: scale(0.5);
+            transform: scale(0.5); } }
+        @media (min--moz-device-pixel-ratio: 2.5), (-webkit-min-device-pixel-ratio: 2.5), (min-device-pixel-ratio: 2.5), (min-resolution: 240dpi), (min-resolution: 2.5dppx) {
+          .container nav ul::after {
+            width: 300%;
+            height: 300%;
+            -webkit-transform: scale(0.33333);
+            transform: scale(0.33333); } }
+      .container nav ul li {
+        height: 100%;
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: .16rem; }
+        .container nav ul li.active {
+          background: #e7f3f0; }
+          .container nav ul li.active b, .container nav ul li.active i {
+            color: #00b38a; }
+        .container nav ul li b {
+          font-weight: 100; }
