@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("var indexTpl = __webpack_require__(/*! ./views/index.html */ \"./src/views/index.html\");\n\nvar renderedIndexTpl = template.render(indexTpl, {});\n$('#app').html(renderedIndexTpl);\n\n//# sourceURL=webpack:///./src/app.js?");
+eval("var indexTpl = __webpack_require__(/*! ./views/index.html */ \"./src/views/index.html\");\n\nvar renderedIndexTpl = template.render(indexTpl, {});\n$('#app').html(renderedIndexTpl);\nconsole.log($('main > div').closest('div'));\n\n//# sourceURL=webpack:///./src/app.js?");
 
 /***/ }),
 
