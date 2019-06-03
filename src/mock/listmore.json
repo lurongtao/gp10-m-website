@@ -1,0 +1,180 @@
+{
+  "result": [
+    {
+      "id": 5908677,
+      "positionName": "高级销售（贵阳）",
+      "city": "杭州",
+      "createTime": "今天 15:07",
+      "salary": "15k-25k",
+      "companyId": 32057,
+      "companyLogo": "i/image2/M01/AF/2A/CgoB5lv3unmANwz0AAAG-i-dV_I198.png",
+      "companyName": "校宝在线",
+      "companyFullName": "校宝在线（杭州）科技股份有限公司"
+    },
+    {
+      "id": 5909358,
+      "positionName": "用户运营实习生（安心保）",
+      "city": "杭州",
+      "createTime": "今天 15:07",
+      "salary": "2k-4k",
+      "companyId": 32057,
+      "companyLogo": "i/image2/M01/AF/2A/CgoB5lv3unmANwz0AAAG-i-dV_I198.png",
+      "companyName": "校宝在线",
+      "companyFullName": "校宝在线（杭州）科技股份有限公司"
+    },
+    {
+      "id": 5893420,
+      "positionName": "蚂蚁金服-H5前端开发专家-网商银行 深圳研发中心",
+      "city": "深圳",
+      "createTime": "今天 15:04",
+      "salary": "25k-45k",
+      "companyId": 153849,
+      "companyLogo": "i/image/M00/1F/54/CgpFT1kRuMmASL74AAAg3WZnNI005.jpeg",
+      "companyName": "蚂蚁金服集团",
+      "companyFullName": "支付宝（杭州）信息技术有限公司"
+    },
+    {
+      "id": 5893455,
+      "positionName": "蚂蚁金服-高级技术专家-国际事业群",
+      "city": "深圳",
+      "createTime": "今天 15:04",
+      "salary": "35k-45k",
+      "companyId": 153849,
+      "companyLogo": "i/image/M00/1F/54/CgpFT1kRuMmASL74AAAg3WZnNI005.jpeg",
+      "companyName": "蚂蚁金服集团",
+      "companyFullName": "支付宝（杭州）信息技术有限公司"
+    },
+    {
+      "id": 5908322,
+      "positionName": "语音识别算法工程师",
+      "city": "深圳",
+      "createTime": "今天 15:04",
+      "salary": "20k-40k",
+      "companyId": 9795,
+      "companyLogo": "image1/M00/0B/F4/CgYXBlT0O--AH6QkAABT5JCIHvs168.png",
+      "companyName": "悦动",
+      "companyFullName": "深圳市悦动天下科技有限公司"
+    },
+    {
+      "id": 5893038,
+      "positionName": "算法工程师",
+      "city": "北京",
+      "createTime": "今天 15:02",
+      "salary": "15k-30k",
+      "companyId": 418,
+      "companyLogo": "image1/M00/00/03/CgYXBlTUV_mAHKvEAAN_QA3AhYk120.png",
+      "companyName": "世纪佳缘",
+      "companyFullName": "上海花千树信息科技有限公司北京分公司"
+    },
+    {
+      "id": 5894743,
+      "positionName": "小程序开发工程师",
+      "city": "北京",
+      "createTime": "今天 15:02",
+      "salary": "10k-15k",
+      "companyId": 418,
+      "companyLogo": "image1/M00/00/03/CgYXBlTUV_mAHKvEAAN_QA3AhYk120.png",
+      "companyName": "世纪佳缘",
+      "companyFullName": "上海花千树信息科技有限公司北京分公司"
+    },
+    {
+      "id": 5893711,
+      "positionName": "内容运营",
+      "city": "成都",
+      "createTime": "今天 15:00",
+      "salary": "4k-6k",
+      "companyId": 288776,
+      "companyLogo": "i/image2/M01/E7/72/CgoB5lx08hiAKxmQAAAlwt6hXGk544.jpg",
+      "companyName": "绿茵岁月",
+      "companyFullName": "成都城市绿茵体育文化传播有限公司"
+    },
+    {
+      "id": 5893946,
+      "positionName": "内容运营",
+      "city": "成都",
+      "createTime": "今天 15:00",
+      "salary": "3k-4k",
+      "companyId": 288776,
+      "companyLogo": "i/image2/M01/E7/72/CgoB5lx08hiAKxmQAAAlwt6hXGk544.jpg",
+      "companyName": "绿茵岁月",
+      "companyFullName": "成都城市绿茵体育文化传播有限公司"
+    },
+    {
+      "id": 5906550,
+      "positionName": "关卡策划",
+      "city": "广州",
+      "createTime": "今天 15:00",
+      "salary": "9k-18k",
+      "companyId": 47535,
+      "companyLogo": "i/image2/M01/65/50/CgotOVs_IPeAB8LlAAA38CK7QoA005.png",
+      "companyName": "英雄互娱广州研发中心",
+      "companyFullName": "珠海网易达电子科技发展有限公司"
+    },
+    {
+      "id": 5890827,
+      "positionName": "新媒体运营专员",
+      "city": "广州",
+      "createTime": "今天 15:00",
+      "salary": "6k-10k",
+      "companyId": 173217,
+      "companyLogo": "i/image3/M00/51/EF/CgpOIFsCopqAdWAVAAXiG1s2M78696.gif",
+      "companyName": "雄山科技",
+      "companyFullName": "广州市雄山科技有限公司"
+    },
+    {
+      "id": 5893098,
+      "positionName": "产品运营专员",
+      "city": "北京",
+      "createTime": "今天 15:00",
+      "salary": "8k-10k",
+      "companyId": 278671,
+      "companyLogo": "i/image2/M00/15/21/CgotOVny7IyAaEzXAAAuVJZgtXk595.jpg",
+      "companyName": "网信",
+      "companyFullName": "北京网信金服信息科技有限公司"
+    },
+    {
+      "id": 5906792,
+      "positionName": "软件实施/技术支持工程师",
+      "city": "南京",
+      "createTime": "今天 15:00",
+      "salary": "8k-10k",
+      "companyId": 33669,
+      "companyLogo": "image1/M00/00/4E/Cgo8PFTUXQOAHojrAAA0xUkRI6M775.jpg",
+      "companyName": "bit-service",
+      "companyFullName": "西安必特思维软件有限公司"
+    },
+    {
+      "id": 5895063,
+      "positionName": "广告视频设计师",
+      "city": "广州",
+      "createTime": "今天 14:59",
+      "salary": "10k-15k",
+      "companyId": 24504,
+      "companyLogo": "image1/M00/00/31/Cgo8PFTUXImAcA-CAACmtuhzjC0097.jpg",
+      "companyName": "手游圈内人",
+      "companyFullName": "广州赫赫信息科技有限公司"
+    },
+    {
+      "id": 5894531,
+      "positionName": "3d设计师",
+      "city": "广州",
+      "createTime": "今天 14:59",
+      "salary": "5k-7k",
+      "companyId": 107966,
+      "companyLogo": "i/image/M00/00/C7/Cgp3O1ZVa3-AGGRMAALIwXnDy4w584.jpg",
+      "companyName": "广州奥的平面设计咨询有限公司",
+      "companyFullName": "广州奥的平面设计咨询有限公司"
+    },
+    {
+      "id": "5908678",
+      "positionName": "高级销售（贵阳）2",
+      "city": "杭州2",
+      "createTime": "今天 15:09",
+      "salary": "115k-125k",
+      "companyId": "320570",
+      "companyLogo": "i/image2/M01/AF/2A/CgoB5lv3unmANwz0AAAG-i-dV_I198.png",
+      "companyName": "校宝在线2",
+      "companyFullName": "校宝在线（杭州）科技股份有限公司2"
+    }
+  ]
+}

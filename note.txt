@@ -1,0 +1,16 @@
+2019-06-03
+布局方案：
+方案一：100%布局，又叫流式布局（高度固定，宽度自适应）
+1、控件弹性
+2、图片等比例
+3、文字流式
+特点：手机越大，显示的内容越多
+
+方案二：REM布局，又叫等比缩放布局（整个页面等比缩放）
+html {
+  // font-size: 26.666667vw;
+  // vw, vh
+  // vw: 1vw = 当前屏幕宽度（逻辑宽度,即window.innerWidth）的 1%
+}
+
+"mock": "json-server ./src/mock/mock.js -r ./src/mock/router.json -p 9000"

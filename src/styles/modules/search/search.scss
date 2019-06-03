@@ -1,0 +1,26 @@
+.m-search {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow-y: scroll;
+  div.banner {
+    font-size: 0;
+    height: 0;
+    margin-bottom: 66.48%;
+    img {
+      width: 100%;
+    }
+  }
+  div.list {
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      li {
+        width: 50%;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

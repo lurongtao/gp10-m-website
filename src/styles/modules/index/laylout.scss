@@ -1,4 +1,5 @@
 @import '../common/icons.scss';
+@import '../common/font-size.scss';
 
 // 布局方案：
 // 方案一：100%布局，又叫流式布局（高度固定，宽度自适应）
@@ -71,7 +72,7 @@ html {
           flex: 1;
           padding-left: .1rem;
           h2 {
-            font-size: .16rem;
+            @include contentFont(16px);
             margin-bottom: .06rem;
             @include ellipsis(null, 2);
           }
@@ -99,7 +100,8 @@ html {
           }
           p.item-time {
             color: #888;
-            font-size: .12rem;
+            // font-size: .12rem;
+            @include contentFont(12px);
           }
         }
       }

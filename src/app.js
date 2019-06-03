@@ -1,7 +1,10 @@
 const indexTpl = require('./views/index.html')
+const searchTpl = require('./views/search.html')
+const { list } = require('./controllers/position')
 
 const renderedIndexTpl = template.render(indexTpl, {})
+const renderedSearchTpl = template.render(searchTpl, {})
 
-$('#app').html(renderedIndexTpl)
+$('#app').html(renderedSearchTpl)
 
-console.log($('main > div').closest('div'))
+list()

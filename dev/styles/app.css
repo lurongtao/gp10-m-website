@@ -829,7 +829,6 @@ a {
         flex: 1;
         padding-left: .1rem; }
         .container main > ul li > div.item-desc h2 {
-          font-size: .16rem;
           margin-bottom: .06rem;
           overflow: hidden;
           text-overflow: ellipsis;
@@ -837,6 +836,15 @@ a {
           -webkit-line-clamp: 2;
           word-wrap: break-word;
           word-break: break-all; }
+          @media screen and (max-width: 320px) {
+            .container main > ul li > div.item-desc h2 {
+              font-size: 16px; } }
+          @media screen and (min-width: 321px) and (max-width: 375px) {
+            .container main > ul li > div.item-desc h2 {
+              font-size: 18px; } }
+          @media screen and (min-width: 414px) {
+            .container main > ul li > div.item-desc h2 {
+              font-size: 20px; } }
         .container main > ul li > div.item-desc p.item-info {
           line-height: .15rem;
           height: .15rem;
@@ -858,8 +866,16 @@ a {
             color: #00b38a;
             text-align: right; }
         .container main > ul li > div.item-desc p.item-time {
-          color: #888;
-          font-size: .12rem; }
+          color: #888; }
+          @media screen and (max-width: 320px) {
+            .container main > ul li > div.item-desc p.item-time {
+              font-size: 12px; } }
+          @media screen and (min-width: 321px) and (max-width: 375px) {
+            .container main > ul li > div.item-desc p.item-time {
+              font-size: 14px; } }
+          @media screen and (min-width: 414px) {
+            .container main > ul li > div.item-desc p.item-time {
+              font-size: 16px; } }
   .container nav {
     height: .44rem; }
     .container nav ul {
@@ -909,3 +925,22 @@ a {
             color: #00b38a; }
         .container nav ul li b {
           font-weight: 100; }
+
+.m-search {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow-y: scroll; }
+  .m-search div.banner {
+    font-size: 0;
+    height: 0;
+    margin-bottom: 66.48%; }
+    .m-search div.banner img {
+      width: 100%; }
+  .m-search div.list ul {
+    display: flex;
+    flex-wrap: wrap; }
+    .m-search div.list ul li {
+      width: 50%; }
+      .m-search div.list ul li img {
+        width: 100%; }

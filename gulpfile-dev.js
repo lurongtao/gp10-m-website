@@ -30,6 +30,7 @@ function copyicons() {
 function webserver() {
   return src('./dev')
     .pipe(gulpWebserver({
+      host: 'localhost',
       port: 8000,
       livereload: true,
       middleware: [
@@ -38,6 +39,12 @@ function webserver() {
           changeOrigin: true, // 访问不同的域名，需要配置成 true
           pathRewrite: {
             '^/api': ''
+          }
+        }),
+        proxy('/json', {
+          target: 'http://localhost:9000',
+          pathRewrite: {
+            '^/json': ''
           }
         })
       ]
