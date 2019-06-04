@@ -1,4 +1,3 @@
-// const posConstroller = require('./controllers/position')
-import { renderList, loadData } from './controllers/position'
+import posController from './controllers/position'
 
-posConstroller.renderList()
+posController.renderList()

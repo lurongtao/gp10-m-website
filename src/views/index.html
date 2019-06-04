@@ -10,23 +10,7 @@
         <h3>十秒钟定制职位</h3>
         <button>去登录</button>
       </div>
-      <ul>
-        {{each data}}
-        <li>
-          <img src="//www.lgstatic.com/{{$value['companyLogo']}}">
-          <div class="item-desc">
-            <h2 class="item-title">{{$value['companyName']}}</h2>
-            <p class="item-info">
-              <span class="item-pos">
-                <b>{{$value['positionName']}}</b>
-              </span>
-              <span class="item-salary">{{$value['salary']}}</span>
-            </p>
-            <p class="item-time">{{$value['createTime']}}</p>
-          </div>
-        </li>
-        {{/each}}
-      </ul>
+      <ul id="position-list"></ul>
       <div class="foot">
         <img src="/images/arrow.png"/>
         <b>上拉加载更多...</b>
