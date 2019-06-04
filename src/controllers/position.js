@@ -88,6 +88,18 @@ const renderList = async() => {
       head.attr('src', '/images/arrow.png')
     }
   })
+
+  let swiper = new Swiper('#swiper', {
+    on: {
+      slideChangeTransitionStart: function(){
+        $('nav li').eq(this.activeIndex).addClass('active').siblings().removeClass('active')
+      },
+    },
+  })
+
+  $('nav li').on('click', function(){
+    swiper.slideTo($(this).index())
+  })
 }
 
 export default {
