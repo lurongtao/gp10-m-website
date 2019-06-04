@@ -14,3 +14,20 @@ html {
 }
 
 "mock": "json-server ./src/mock/mock.js -r ./src/mock/router.json -p 9000"
+
+2019-06-04
+https://aui.github.io/art-template/zh-cn/docs/
+
+better-scroll 使用注意事项：
+1、区域滚动必须有（确定）一个滚动的容器
+2、容器的高度一定小于内容的高度
+3、保证容器内有一个唯一的子元素
+
+HTTP methods
+1xx: 正在发送
+2xx: 成功
+3xx: 请求转发
+4xx: 客户端错误
+5xx: 服务器错误
+
+jQuery $.ajax 返回一个Promise

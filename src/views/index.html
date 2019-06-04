@@ -1,103 +1,37 @@
 <div class="container">
   <header>拉钩网</header>
-  <main>
+  <main id="index-scroll">
     <div>
-      <h3>十秒钟定制职位</h3>
-      <button>去登录</button>
+      <div class="head">
+        <img src="/images/arrow.png"/>
+        <b>下拉刷新...</b>
+      </div>
+      <div>
+        <h3>十秒钟定制职位</h3>
+        <button>去登录</button>
+      </div>
+      <ul>
+        {{each data}}
+        <li>
+          <img src="//www.lgstatic.com/{{$value['companyLogo']}}">
+          <div class="item-desc">
+            <h2 class="item-title">{{$value['companyName']}}</h2>
+            <p class="item-info">
+              <span class="item-pos">
+                <b>{{$value['positionName']}}</b>
+              </span>
+              <span class="item-salary">{{$value['salary']}}</span>
+            </p>
+            <p class="item-time">{{$value['createTime']}}</p>
+          </div>
+        </li>
+        {{/each}}
+      </ul>
+      <div class="foot">
+        <img src="/images/arrow.png"/>
+        <b>上拉加载更多...</b>
+      </div>
     </div>
-    <ul>
-      <li>
-        <img src="//www.lgstatic.com/i/image3/M00/2E/F2/Cgq2xlqglPaAErj7AAAs-Ohjutg470.png">
-        <div class="item-desc">
-          <h2 class="item-title">考试星</h2>
-          <p class="item-info">
-            <span class="item-pos">
-              <b>销售经理（电销向） [ 北京 ]</b>
-            </span>
-            <span class="item-salary">99k-100k</span>
-          </p>
-          <p class="item-time">今天 09:28</p>
-        </div>
-      </li>
-      <li>
-        <img src="//www.lgstatic.com/i/image3/M00/2E/F2/Cgq2xlqglPaAErj7AAAs-Ohjutg470.png">
-        <div class="item-desc">
-          <h2 class="item-title">考试星</h2>
-          <p class="item-info">
-            <span class="item-pos">
-              <b>销售经理（电销向） [ 北京 ]</b>
-            </span>
-            <span class="item-salary">99k-100k</span>
-          </p>
-          <p class="item-time">今天 09:28</p>
-        </div>
-      </li>
-      <li>
-        <img src="//www.lgstatic.com/i/image3/M00/2E/F2/Cgq2xlqglPaAErj7AAAs-Ohjutg470.png">
-        <div class="item-desc">
-          <h2 class="item-title">考试星</h2>
-          <p class="item-info">
-            <span class="item-pos">
-              <b>销售经理（电销向） [ 北京 ]</b>
-            </span>
-            <span class="item-salary">99k-100k</span>
-          </p>
-          <p class="item-time">今天 09:28</p>
-        </div>
-      </li>
-      <li>
-        <img src="//www.lgstatic.com/i/image3/M00/2E/F2/Cgq2xlqglPaAErj7AAAs-Ohjutg470.png">
-        <div class="item-desc">
-          <h2 class="item-title">考试星</h2>
-          <p class="item-info">
-            <span class="item-pos">
-              <b>销售经理（电销向） [ 北京 ]</b>
-            </span>
-            <span class="item-salary">99k-100k</span>
-          </p>
-          <p class="item-time">今天 09:28</p>
-        </div>
-      </li>
-      <li>
-        <img src="//www.lgstatic.com/i/image3/M00/2E/F2/Cgq2xlqglPaAErj7AAAs-Ohjutg470.png">
-        <div class="item-desc">
-          <h2 class="item-title">考试星</h2>
-          <p class="item-info">
-            <span class="item-pos">
-              <b>销售经理（电销向） [ 北京 ]</b>
-            </span>
-            <span class="item-salary">99k-100k</span>
-          </p>
-          <p class="item-time">今天 09:28</p>
-        </div>
-      </li>
-      <li>
-        <img src="//www.lgstatic.com/i/image3/M00/2E/F2/Cgq2xlqglPaAErj7AAAs-Ohjutg470.png">
-        <div class="item-desc">
-          <h2 class="item-title">考试星</h2>
-          <p class="item-info">
-            <span class="item-pos">
-              <b>销售经理（电销向） [ 北京 ]</b>
-            </span>
-            <span class="item-salary">99k-100k</span>
-          </p>
-          <p class="item-time">今天 09:28</p>
-        </div>
-      </li>
-      <li>
-        <img src="//www.lgstatic.com/i/image3/M00/2E/F2/Cgq2xlqglPaAErj7AAAs-Ohjutg470.png">
-        <div class="item-desc">
-          <h2 class="item-title">考试星</h2>
-          <p class="item-info">
-            <span class="item-pos">
-              <b>销售经理（电销向） [ 北京 ]</b>
-            </span>
-            <span class="item-salary">99k-100k</span>
-          </p>
-          <p class="item-time">今天 09:28</p>
-        </div>
-      </li>
-    </ul>
   </main>
   <nav>
     <ul>

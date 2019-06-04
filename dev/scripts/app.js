@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/app.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -90,10 +90,11 @@
 /*!********************!*\
   !*** ./src/app.js ***!
   \********************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("var indexTpl = __webpack_require__(/*! ./views/index.html */ \"./src/views/index.html\");\n\nvar searchTpl = __webpack_require__(/*! ./views/search.html */ \"./src/views/search.html\");\n\nvar _require = __webpack_require__(/*! ./controllers/position */ \"./src/controllers/position.js\"),\n    list = _require.list;\n\nvar renderedIndexTpl = template.render(indexTpl, {});\nvar renderedSearchTpl = template.render(searchTpl, {});\n$('#app').html(renderedSearchTpl);\nlist();\n\n//# sourceURL=webpack:///./src/app.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _controllers_position__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./controllers/position */ \"./src/controllers/position.js\");\n/* harmony import */ var _controllers_position__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_controllers_position__WEBPACK_IMPORTED_MODULE_0__);\n// const posConstroller = require('./controllers/position')\n\nposConstroller.renderList();\n\n//# sourceURL=webpack:///./src/app.js?");
 
 /***/ }),
 
@@ -104,29 +105,18 @@ eval("var indexTpl = __webpack_require__(/*! ./views/index.html */ \"./src/views
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("module.exports = {\n  list: function list() {\n    $.ajax({\n      url: '/json/result',\n      type: 'POST',\n      data: {\n        \"id\": 5908678,\n        \"positionName\": \"高级销售（贵阳）2\",\n        \"city\": \"杭州2\",\n        \"createTime\": \"今天 15:09\",\n        \"salary\": \"115k-125k\",\n        \"companyId\": 320570,\n        \"companyLogo\": \"i/image2/M01/AF/2A/CgoB5lv3unmANwz0AAAG-i-dV_I198.png\",\n        \"companyName\": \"校宝在线2\",\n        \"companyFullName\": \"校宝在线（杭州）科技股份有限公司2\"\n      },\n      success: function success(result) {\n        console.log(result);\n      }\n    });\n  }\n};\n\n//# sourceURL=webpack:///./src/controllers/position.js?");
+eval("// const indexTpl = require('../views/index.html')\n// const BScroll = require('better-scroll').default\nexports.loadData = function () {\n  return $.ajax({\n    url: '/api/listmore.json?pageNo=1&pageSize=15',\n    type: 'get',\n    success: function success(result) {\n      return result;\n    }\n  });\n};\n\nexports.renderList = function () {} // let result = await this.loadData()\n// let data = result.content.data.page.result\n// let renderedIndexTpl = template.render(indexTpl, { data })\n// $('#app').html(renderedIndexTpl)\n// // Better scroll 实例化\n// let bScroll = new BScroll('#index-scroll', {\n//   probeType: 1\n// })\n// let head = $('.head img'),\n//   topImgHasClass = head.hasClass('up')\n// let foot = $('.foot img'),\n//   bottomImgHasClass = head.hasClass('down')\n// // 初始化位置\n// bScroll.scrollTo(0, 40)\n// // 绑定滑动事件\n// bScroll.on('scroll', function () {\n//   let y = this.y\n//   let maxY = this.maxScrollY - y\n//   // 下拉，当隐藏的loading完全显示的时候触发\n//   if (y >= 0) {\n//     !topImgHasClass && head.addClass('up')\n//     return\n//   }\n//   // 上拉，当滚动到最底部时候触发\n//   if ( maxY >=0 ) {\n//     !bottomImgHasClass && foot.addClass('down')\n//     return\n//   }\n// })\n// // 绑定手指松开触发的事件\n// bScroll.on('scrollEnd', function() {\n//   // 下拉刷新处理\n//   if (this.y >= -40 && this.y < 0) {\n//     this.scrollTo(0, -40)\n//     head.removeClass('up')\n//   } else if (this.y >= 0) {\n//     head.attr('src', '/images/ajax-loader.gif')\n//     // 异步加载数据\n//   }\n//   // 下拉加载处理\n//   let maxY = this.maxScrollY - this.y\n//   if (maxY > -40 && maxY < 0) {\n//       this.scrollTo(0, this.maxScrollY + 40);\n//       foot.removeClass('down')\n//   } else if (maxY >= 0) {\n//       foot.attr('src', '/images/ajax-loader.gif')\n//   }\n// })\n// module.exports = {\n//   renderList,\n//   loadData\n// }\n;\n\n//# sourceURL=webpack:///./src/controllers/position.js?");
 
 /***/ }),
 
-/***/ "./src/views/index.html":
-/*!******************************!*\
-  !*** ./src/views/index.html ***!
-  \******************************/
+/***/ 0:
+/*!**************************!*\
+  !*** multi ./src/app.js ***!
+  \**************************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-eval("module.exports = \"<div class=\\\"container\\\">  <header>拉钩网</header>  <main>    <div>      <h3>十秒钟定制职位</h3>      <button>去登录</button>    </div>    <ul>      <li>        <img src=\\\"//www.lgstatic.com/i/image3/M00/2E/F2/Cgq2xlqglPaAErj7AAAs-Ohjutg470.png\\\">        <div class=\\\"item-desc\\\">          <h2 class=\\\"item-title\\\">考试星</h2>          <p class=\\\"item-info\\\">            <span class=\\\"item-pos\\\">              <b>销售经理（电销向） [ 北京 ]</b>            </span>            <span class=\\\"item-salary\\\">99k-100k</span>          </p>          <p class=\\\"item-time\\\">今天 09:28</p>        </div>      </li>      <li>        <img src=\\\"//www.lgstatic.com/i/image3/M00/2E/F2/Cgq2xlqglPaAErj7AAAs-Ohjutg470.png\\\">        <div class=\\\"item-desc\\\">          <h2 class=\\\"item-title\\\">考试星</h2>          <p class=\\\"item-info\\\">            <span class=\\\"item-pos\\\">              <b>销售经理（电销向） [ 北京 ]</b>            </span>            <span class=\\\"item-salary\\\">99k-100k</span>          </p>          <p class=\\\"item-time\\\">今天 09:28</p>        </div>      </li>      <li>        <img src=\\\"//www.lgstatic.com/i/image3/M00/2E/F2/Cgq2xlqglPaAErj7AAAs-Ohjutg470.png\\\">        <div class=\\\"item-desc\\\">          <h2 class=\\\"item-title\\\">考试星</h2>          <p class=\\\"item-info\\\">            <span class=\\\"item-pos\\\">              <b>销售经理（电销向） [ 北京 ]</b>            </span>            <span class=\\\"item-salary\\\">99k-100k</span>          </p>          <p class=\\\"item-time\\\">今天 09:28</p>        </div>      </li>      <li>        <img src=\\\"//www.lgstatic.com/i/image3/M00/2E/F2/Cgq2xlqglPaAErj7AAAs-Ohjutg470.png\\\">        <div class=\\\"item-desc\\\">          <h2 class=\\\"item-title\\\">考试星</h2>          <p class=\\\"item-info\\\">            <span class=\\\"item-pos\\\">              <b>销售经理（电销向） [ 北京 ]</b>            </span>            <span class=\\\"item-salary\\\">99k-100k</span>          </p>          <p class=\\\"item-time\\\">今天 09:28</p>        </div>      </li>      <li>        <img src=\\\"//www.lgstatic.com/i/image3/M00/2E/F2/Cgq2xlqglPaAErj7AAAs-Ohjutg470.png\\\">        <div class=\\\"item-desc\\\">          <h2 class=\\\"item-title\\\">考试星</h2>          <p class=\\\"item-info\\\">            <span class=\\\"item-pos\\\">              <b>销售经理（电销向） [ 北京 ]</b>            </span>            <span class=\\\"item-salary\\\">99k-100k</span>          </p>          <p class=\\\"item-time\\\">今天 09:28</p>        </div>      </li>      <li>        <img src=\\\"//www.lgstatic.com/i/image3/M00/2E/F2/Cgq2xlqglPaAErj7AAAs-Ohjutg470.png\\\">        <div class=\\\"item-desc\\\">          <h2 class=\\\"item-title\\\">考试星</h2>          <p class=\\\"item-info\\\">            <span class=\\\"item-pos\\\">              <b>销售经理（电销向） [ 北京 ]</b>            </span>            <span class=\\\"item-salary\\\">99k-100k</span>          </p>          <p class=\\\"item-time\\\">今天 09:28</p>        </div>      </li>      <li>        <img src=\\\"//www.lgstatic.com/i/image3/M00/2E/F2/Cgq2xlqglPaAErj7AAAs-Ohjutg470.png\\\">        <div class=\\\"item-desc\\\">          <h2 class=\\\"item-title\\\">考试星</h2>          <p class=\\\"item-info\\\">            <span class=\\\"item-pos\\\">              <b>销售经理（电销向） [ 北京 ]</b>            </span>            <span class=\\\"item-salary\\\">99k-100k</span>          </p>          <p class=\\\"item-time\\\">今天 09:28</p>        </div>      </li>    </ul>  </main>  <nav>    <ul>      <li class=\\\"active\\\">        <i class=\\\"yo-ico\\\">&#xe6b8;</i>        <b>职位</b>      </li>      <li>        <i class=\\\"yo-ico\\\">&#xe7da;</i>        <b>搜索</b>      </li>      <li>        <i class=\\\"yo-ico\\\">&#xe7d5;</i>        <b>我的</b>      </li>    </ul>  </nav></div>\"\n\n//# sourceURL=webpack:///./src/views/index.html?");
-
-/***/ }),
-
-/***/ "./src/views/search.html":
-/*!*******************************!*\
-  !*** ./src/views/search.html ***!
-  \*******************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("module.exports = \"<div class=\\\"m-search\\\">  <div class=\\\"banner\\\">    <img src=\\\"https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=3512691745,3279292839&fm=173&app=49&f=JPEG?w=218&h=146&s=C38141AA28331892C2A2400A0300F0CA\\\" alt=\\\"\\\">  </div>  <div class=\\\"list\\\">    <ul>      <li>        <img src=\\\"//www.lgstatic.com/i/image2/M01/62/C6/CgoB5ls7ElGAbSoaAAJyk642I2w321.png\\\" alt=\\\"\\\">      </li>      <li>        <img src=\\\"//www.lgstatic.com/image1/M00/0F/92/Cgo8PFT9T2eAbBTMAACCjvBXe6M853.jpg\\\" alt=\\\"\\\">      </li>      <li>        <img src=\\\"//www.lgstatic.com/i/image2/M01/62/C6/CgoB5ls7ElGAbSoaAAJyk642I2w321.png\\\" alt=\\\"\\\">      </li>      <li>        <img src=\\\"//www.lgstatic.com/image1/M00/0F/92/Cgo8PFT9T2eAbBTMAACCjvBXe6M853.jpg\\\" alt=\\\"\\\">      </li>      <li>        <img src=\\\"//www.lgstatic.com/i/image2/M01/62/C6/CgoB5ls7ElGAbSoaAAJyk642I2w321.png\\\" alt=\\\"\\\">      </li>      <li>        <img src=\\\"//www.lgstatic.com/image1/M00/0F/92/Cgo8PFT9T2eAbBTMAACCjvBXe6M853.jpg\\\" alt=\\\"\\\">      </li>      <li>        <img src=\\\"//www.lgstatic.com/i/image2/M01/62/C6/CgoB5ls7ElGAbSoaAAJyk642I2w321.png\\\" alt=\\\"\\\">      </li>      <li>        <img src=\\\"//www.lgstatic.com/image1/M00/0F/92/Cgo8PFT9T2eAbBTMAACCjvBXe6M853.jpg\\\" alt=\\\"\\\">      </li>    </ul>  </div></div>\"\n\n//# sourceURL=webpack:///./src/views/search.html?");
+eval("module.exports = __webpack_require__(/*! ./src/app.js */\"./src/app.js\");\n\n\n//# sourceURL=webpack:///multi_./src/app.js?");
 
 /***/ })
 
