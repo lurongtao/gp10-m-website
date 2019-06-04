@@ -35,10 +35,7 @@ html {
   main {
     flex: 1;
     overflow-y: auto;
-    .swiper-container, .swiper-wrapper, .swiper-slide {
-      height: 100%;
-    }
-    div#index-scroll {
+    > div {
       .head, 
       .foot {
         display: flex;
@@ -64,7 +61,7 @@ html {
         transform: rotate(180deg);
       }
 
-      > div div:nth-child(2) {
+      div:nth-child(2) {
         height: .44rem;
         background: #fff;
         padding: 0 .15rem;
@@ -87,7 +84,7 @@ html {
           border: 0;
         }
       }
-      ul#position-list {
+      ul {
         li {
           display: flex;
           padding: .14rem;
@@ -100,10 +97,6 @@ html {
           > div.item-desc {
             flex: 1;
             padding-left: .1rem;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            border: 0;
             h2 {
               @include contentFont(16px);
               margin-bottom: .06rem;

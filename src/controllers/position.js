@@ -1,4 +1,3 @@
-const indexTpl = require('../views/index.html')
 const positionListTpl = require('../views/position.list.html')
 const BScroll = require('better-scroll').default
 
@@ -10,8 +9,7 @@ let currentPage = 1
 const renderList = async() => {
   let result = await fetch.get('/api/listmore.json?pageNo=1&pageSize=15')
   let data = positionList = result.content.data.page.result
-  let renderedIndexTpl = template.render(indexTpl, { data })
-  $('#app').html(renderedIndexTpl)
+
   let renderedPositionListTpl = template.render(positionListTpl, { data })
   $('#position-list').html(renderedPositionListTpl)
 
@@ -87,18 +85,6 @@ const renderList = async() => {
       head.removeClass('down')
       head.attr('src', '/images/arrow.png')
     }
-  })
-
-  let swiper = new Swiper('#swiper', {
-    on: {
-      slideChangeTransitionStart: function(){
-        $('nav li').eq(this.activeIndex).addClass('active').siblings().removeClass('active')
-      },
-    },
-  })
-
-  $('nav li').on('click', function(){
-    swiper.slideTo($(this).index())
   })
 }
 
