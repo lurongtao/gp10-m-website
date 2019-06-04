@@ -57,7 +57,7 @@ function packjs() {
       mode: 'development',
 
       entry: {
-        app: './src/app.js'
+        app: ['./src/app.js']
       },
 
       output: {
@@ -70,12 +70,14 @@ function packjs() {
         rules: [
           {
             test: /\.js$/,
-            exclude: /node_modules/,
+            // exclude: /node_modules/,
             use: {
               loader: 'babel-loader',
               options: {
                 presets: ['@babel/preset-env'],
-                plugins: ['@babel/plugin-transform-runtime']
+                plugins: [['@babel/plugin-transform-runtime', {
+                  'helpers': false
+                }]]
               }
             }
           },

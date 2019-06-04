@@ -1,10 +1,11 @@
+import posController from './controllers/position'
+import { router } from './router/hash'
+
 const indexTpl = require('./views/index.html')
-const searchTpl = require('./views/search.html')
-const { list } = require('./controllers/position')
+let renderedIndexTpl = template.render(indexTpl)
+$('#app').html(renderedIndexTpl)
 
-const renderedIndexTpl = template.render(indexTpl, {})
-const renderedSearchTpl = template.render(searchTpl, {})
 
-$('#app').html(renderedSearchTpl)
+posController.renderList()
 
-list()
+router.init()
