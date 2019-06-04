@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/app.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -127,6 +127,17 @@ eval("module.exports = \"<div class=\\\"container\\\">  <header>拉钩网</heade
 /***/ (function(module, exports) {
 
 eval("module.exports = \"<div class=\\\"m-search\\\">  <div class=\\\"banner\\\">    <img src=\\\"https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=3512691745,3279292839&fm=173&app=49&f=JPEG?w=218&h=146&s=C38141AA28331892C2A2400A0300F0CA\\\" alt=\\\"\\\">  </div>  <div class=\\\"list\\\">    <ul>      <li>        <img src=\\\"//www.lgstatic.com/i/image2/M01/62/C6/CgoB5ls7ElGAbSoaAAJyk642I2w321.png\\\" alt=\\\"\\\">      </li>      <li>        <img src=\\\"//www.lgstatic.com/image1/M00/0F/92/Cgo8PFT9T2eAbBTMAACCjvBXe6M853.jpg\\\" alt=\\\"\\\">      </li>      <li>        <img src=\\\"//www.lgstatic.com/i/image2/M01/62/C6/CgoB5ls7ElGAbSoaAAJyk642I2w321.png\\\" alt=\\\"\\\">      </li>      <li>        <img src=\\\"//www.lgstatic.com/image1/M00/0F/92/Cgo8PFT9T2eAbBTMAACCjvBXe6M853.jpg\\\" alt=\\\"\\\">      </li>      <li>        <img src=\\\"//www.lgstatic.com/i/image2/M01/62/C6/CgoB5ls7ElGAbSoaAAJyk642I2w321.png\\\" alt=\\\"\\\">      </li>      <li>        <img src=\\\"//www.lgstatic.com/image1/M00/0F/92/Cgo8PFT9T2eAbBTMAACCjvBXe6M853.jpg\\\" alt=\\\"\\\">      </li>      <li>        <img src=\\\"//www.lgstatic.com/i/image2/M01/62/C6/CgoB5ls7ElGAbSoaAAJyk642I2w321.png\\\" alt=\\\"\\\">      </li>      <li>        <img src=\\\"//www.lgstatic.com/image1/M00/0F/92/Cgo8PFT9T2eAbBTMAACCjvBXe6M853.jpg\\\" alt=\\\"\\\">      </li>    </ul>  </div></div>\"\n\n//# sourceURL=webpack:///./src/views/search.html?");
+
+/***/ }),
+
+/***/ 0:
+/*!**************************!*\
+  !*** multi ./src/app.js ***!
+  \**************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__(/*! ./src/app.js */\"./src/app.js\");\n\n\n//# sourceURL=webpack:///multi_./src/app.js?");
 
 /***/ })
 
