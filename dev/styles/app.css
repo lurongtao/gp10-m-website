@@ -740,7 +740,7 @@ a {
     text-align: center; }
   .container main {
     flex: 1;
-    overflow-y: auto; }
+    overflow: hidden; }
     .container main > div .head,
     .container main > div .foot {
       display: flex;
@@ -760,14 +760,14 @@ a {
       -webkit-transform: rotate(360deg) !important; }
     .container main > div .down {
       transform: rotate(180deg); }
-    .container main > div div:nth-child(2) {
+    .container main > div > div:nth-child(2) {
       height: .44rem;
       background: #fff;
       padding: 0 .15rem;
       display: flex;
       align-items: center;
       position: relative; }
-      .container main > div div:nth-child(2)::after {
+      .container main > div > div:nth-child(2)::after {
         pointer-events: none;
         position: absolute;
         z-index: 999;
@@ -780,27 +780,27 @@ a {
         -webkit-transform-origin: 0 0;
         transform-origin: 0 0; }
         @media (max--moz-device-pixel-ratio: 1.49), (-webkit-max-device-pixel-ratio: 1.49), (max-device-pixel-ratio: 1.49), (max-resolution: 143dpi), (max-resolution: 1.49dppx) {
-          .container main > div div:nth-child(2)::after {
+          .container main > div > div:nth-child(2)::after {
             width: 100%;
             height: 100%; } }
         @media (min--moz-device-pixel-ratio: 1.5) and (max--moz-device-pixel-ratio: 2.49), (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-max-device-pixel-ratio: 2.49), (min-device-pixel-ratio: 1.5) and (max-device-pixel-ratio: 2.49), (min-resolution: 144dpi) and (max-resolution: 239dpi), (min-resolution: 1.5dppx) and (max-resolution: 2.49dppx) {
-          .container main > div div:nth-child(2)::after {
+          .container main > div > div:nth-child(2)::after {
             width: 200%;
             height: 200%;
             -webkit-transform: scale(0.5);
             transform: scale(0.5); } }
         @media (min--moz-device-pixel-ratio: 2.5), (-webkit-min-device-pixel-ratio: 2.5), (min-device-pixel-ratio: 2.5), (min-resolution: 240dpi), (min-resolution: 2.5dppx) {
-          .container main > div div:nth-child(2)::after {
+          .container main > div > div:nth-child(2)::after {
             width: 300%;
             height: 300%;
             -webkit-transform: scale(0.33333);
             transform: scale(0.33333); } }
-      .container main > div div:nth-child(2) h3 {
+      .container main > div > div:nth-child(2) h3 {
         font-weight: 100;
         font-size: .14rem;
         line-height: .44rem;
         flex: 1; }
-      .container main > div div:nth-child(2) button {
+      .container main > div > div:nth-child(2) button {
         padding: 0 .2rem;
         border-radius: .15rem;
         height: .3rem;

@@ -1,3 +1,4 @@
+const positionTpl = require('../views/position.html')
 const positionListTpl = require('../views/position.list.html')
 const BScroll = require('better-scroll').default
 
@@ -6,10 +7,12 @@ import fetch from '../models/fetch'
 let positionList = []
 let currentPage = 1
 
-const renderList = async() => {
+const render = async() => {
   let result = await fetch.get('/api/listmore.json?pageNo=1&pageSize=15')
   let data = positionList = result.content.data.page.result
 
+  $('main').html(positionTpl)
+  
   let renderedPositionListTpl = template.render(positionListTpl, { data })
   $('#position-list').html(renderedPositionListTpl)
 
@@ -89,5 +92,5 @@ const renderList = async() => {
 }
 
 export default {
-  renderList
+  render
 }

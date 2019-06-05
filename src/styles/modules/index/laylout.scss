@@ -34,7 +34,7 @@ html {
   }
   main {
     flex: 1;
-    overflow-y: auto;
+    overflow: hidden;
     > div {
       .head, 
       .foot {
@@ -61,7 +61,7 @@ html {
         transform: rotate(180deg);
       }
 
-      div:nth-child(2) {
+      > div:nth-child(2) {
         height: .44rem;
         background: #fff;
         padding: 0 .15rem;
