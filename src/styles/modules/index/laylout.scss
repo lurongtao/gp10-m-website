@@ -1,5 +1,6 @@
 @import '../common/icons.scss';
 @import '../common/font-size.scss';
+@import '../common/header.scss';
 
 // 布局方案：
 // 方案一：100%布局，又叫流式布局（高度固定，宽度自适应）
@@ -20,17 +21,16 @@ html {
   height: 100%;
 }
 
+#index {
+  height: 100%;
+}
+
 .container {
   height: 100%;
   display: flex;
   flex-direction: column;
   header {
-    height: .44rem;
-    background: #00b38a;
-    font-size: .18rem;
-    color: #fff;
-    line-height: .44rem;
-    text-align: center;
+    @extend %header;
   }
   main {
     flex: 1;

@@ -25,6 +25,7 @@
     "mock": "json-server ./src/mock/listmore.json -p 9000 -w"
   },
   "dependencies": {
-    "better-scroll": "^1.15.2"
+    "better-scroll": "^1.15.2",
+    "query-string": "^6.5.0"
   }
 }

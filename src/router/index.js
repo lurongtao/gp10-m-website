@@ -1,7 +1,9 @@
 import index from '../controllers/index'
+import home from '../controllers/home'
 import position from '../controllers/position'
 import search from '../controllers/search'
 import profile from '../controllers/profile'
+import details from '../controllers/details'
 
 export default class Router {
   constructor(obj) {
@@ -9,9 +11,12 @@ export default class Router {
     // this.mode = 'history'
     // 路由配置
     this.routes = {
-      '/position': position,
-      '/search': search,
-      '/profile': profile
+      '/index': index,
+      '/index/home': home,
+      '/index/details': details,
+      '/index/home/position': position,
+      '/index/home/search': search,
+      '/index/home/profile': profile
     }
     // 组件挂载根元素
     this.root = $('#main')
@@ -68,7 +73,7 @@ export default class Router {
       var oldURL = e.oldURL.split('#')[1];
     }
     // 获取当前路径,默认'/index'
-    var currentURL = location.hash.slice(1).split('?')[0] || '/position';
+    var currentURL = location.hash.slice(1).split('?')[0] || '/index/home/position';
     this.loadView(currentURL)
   }
   /**
@@ -112,7 +117,7 @@ export default class Router {
       if (this.oldURL && this.oldURL[index] == this.currentURLlist[index]) {
         this.handleSubRouter(item, index)
       } else {
-        this.controller(this.controllerName, item)
+        this.controller(this.controllerName, this.url)
       }
     });
     // 记录链接数组,后续处理子级组件
@@ -210,6 +215,6 @@ export default class Router {
    * @param  item 当前router对象
    */
   navActive(item) {
-    $('nav a').filter(`[href="#/${item}"]`).closest('li').addClass('active').siblings().removeClass('active')
+    $('nav a').filter(`[href="#${item}"]`).closest('li').addClass('active').siblings().removeClass('active')
   }
 }

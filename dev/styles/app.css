@@ -724,20 +724,24 @@ a {
   font-family: yofont;
   src: url(/icons/iconfont.woff) format("woff"), url(/icons/iconfont.ttf) format("truetype"); }
 
+.container header, .m-detail header {
+  height: .44rem;
+  background: #00b38a;
+  font-size: .18rem;
+  color: #fff;
+  line-height: .44rem;
+  text-align: center; }
+
 #app {
+  height: 100%; }
+
+#index {
   height: 100%; }
 
 .container {
   height: 100%;
   display: flex;
   flex-direction: column; }
-  .container header {
-    height: .44rem;
-    background: #00b38a;
-    font-size: .18rem;
-    color: #fff;
-    line-height: .44rem;
-    text-align: center; }
   .container main {
     flex: 1;
     overflow: hidden; }
@@ -964,3 +968,18 @@ a {
       width: 50%; }
       .m-search div.list ul li img {
         width: 100%; }
+
+.container header, .m-detail header {
+  height: .44rem;
+  background: #00b38a;
+  font-size: .18rem;
+  color: #fff;
+  line-height: .44rem;
+  text-align: center; }
+
+.m-detail {
+  height: 100%;
+  display: flex;
+  flex-direction: column; }
+  .m-detail section {
+    font-size: .18rem; }

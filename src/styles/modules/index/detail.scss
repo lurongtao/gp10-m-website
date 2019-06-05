@@ -1,0 +1,12 @@
+@import '../common/header.scss';
+.m-detail {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  header {
+    @extend %header;
+  }
+  section {
+    font-size: .18rem;
+  }
+}
