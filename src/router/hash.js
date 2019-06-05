@@ -12,6 +12,8 @@ const router = {
         $('main').html('profile')
         break;
     }
+
+    $(`nav a[href='${hash}']`).closest('li').addClass('active').siblings().removeClass('active')
   },
 
   init() {

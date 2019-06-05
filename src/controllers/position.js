@@ -1,21 +1,31 @@
+const positionTpl = require('../views/position.html')
 const positionListTpl = require('../views/position.list.html')
 const BScroll = require('better-scroll').default
+import Router from '../router/'
 
 import fetch from '../models/fetch'
 
 let positionList = []
 let currentPage = 1
 
-const renderList = async() => {
+const gotoPage = id => {
+  let router = new Router({mode: 'hash'})
+  router.push('/index/details?id=' + id)
+}
+
+const render = async() => {
   let result = await fetch.get('/api/listmore.json?pageNo=1&pageSize=15')
   let data = positionList = result.content.data.page.result
 
+  $('main').html(positionTpl)
+  
   let renderedPositionListTpl = template.render(positionListTpl, { data })
   $('#position-list').html(renderedPositionListTpl)
 
   // Better scroll 实例化
   let bScroll = new BScroll('#index-scroll', {
-    probeType: 1
+    probeType: 1,
+    click: true
   })
 
   let head = $('.head img'),
@@ -86,8 +96,13 @@ const renderList = async() => {
       head.attr('src', '/images/arrow.png')
     }
   })
+
+  $('#position-list').on('click', 'li', function() {
+    let id = $(this).attr('data-id')
+    gotoPage(id)
+  })
 }
 
 export default {
-  renderList
+  render
 }
