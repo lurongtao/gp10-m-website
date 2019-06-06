@@ -33,7 +33,9 @@ function packjs() {
       mode: 'production',
 
       entry: {
-        app: './src/app.js'
+        app: ['./src/app.js'],
+        'app-search': ['./src/app-search.js'],
+        'app-profile': ['./src/app-profile.js']
       },
 
       output: {
@@ -75,7 +77,7 @@ function revColl() {
 }
 
 function packCSS() {
-  return src('./src/styles/app.scss')
+  return src('./src/styles/*.scss')
     .pipe(gulpSass().on('error', gulpSass.logError))
     .pipe(cleanCSS({compatibility: 'ie8'}))
     .pipe(rev())

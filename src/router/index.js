@@ -1,4 +1,5 @@
 import index from '../controllers/index'
+import error from '../controllers/error'
 import home from '../controllers/home'
 import position from '../controllers/position'
 import search from '../controllers/search'
@@ -6,13 +7,14 @@ import profile from '../controllers/profile'
 import details from '../controllers/details'
 
 export default class Router {
-  constructor(obj) {
+  constructor(obj) { // 生命周期函数
     this.mode = obj.mode
     // this.mode = 'history'
     // 路由配置
     this.routes = {
       '/index': index,
       '/index/home': home,
+      '/index/error': error,
       '/index/details': details,
       '/index/home/position': position,
       '/index/home/search': search,
@@ -96,7 +98,7 @@ export default class Router {
       history.replaceState({
         path: '/'
       }, null, '/')
-      currentURL = '/position'
+      currentURL = '/index/home/position'
     }
     // 多级链接拆分为数组,遍历依次加载
     this.currentURLlist = currentURL.slice(1).split('/')
@@ -152,12 +154,12 @@ export default class Router {
    */
   errorPage() {
     if (this.mode === 'hash') {
-      location.href = '#/error'
+      location.href = '#/index/error'
     } else {
       history.replaceState({
-        path: '/error'
-      }, null, '/error')
-      this.loadView('/error')
+        path: '/index/error'
+      }, null, '/index/error')
+      this.loadView('/index/error')
     }
   }
   /**

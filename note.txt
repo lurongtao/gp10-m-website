@@ -31,3 +31,51 @@ HTTP methods
 5xx: 服务器错误
 
 jQuery $.ajax 返回一个Promise
+
+2019-06-06
+拉勾网：M站(webapps)
+1、前后端架构
+- 前后端分离：
+前端后端两套分支，前端通过http请求后端接口，后端只关注接口开发，通过 index.html/index.php 来和前端对接
+- 前端架构：
+RMVC + gulp + 模块化（CommonJS, ES Module）+ sass + 前端模板 + Mock数据 + UI框架 + JS库
+
+2、gulp
+- 启动server gulp-webserver
+- JS模块化 webpack-stream
+- CSS预处理 gulp-sass
+- Mock数据 http-proxy-middleware
+- 生产环境和开发环境分离 gulp --gulpfile
+- 版本号控制 gulp-rev rev-collector
+
+3、RMVC
+R: router // 路径切换
+M: model  // 数据源
+V: view   // 结构和样式 html + css
+C: controller // 交互逻辑 js
+
+4、模块化
+CommonJS, 规范
+ES Module, 规范
+CommonJS 和 ES Module区别
+
+5、SASS
+
+6、前端模板
+artTemplate
+template.render(originString, {data: {b: true, d: 'abc', a: []}})
+{{}}
+{{if data.b}} {{/if}}
+{{each data.a index value}} $index, $value {{/each}}
+
+7、mock数据
+- 有后端接口： 代理
+- 没有后端接口：代理 + json server
+http://m.lagou.com/listmore.json?pageNo=2&pageSize=15
+http://localhost:8000/api/listmore.json?pageNo=2&pageSize=15
+
+8、UI框架
+Yo reset, border, ellipsis
+
+9、JS库
+zepto, better-scroll, swiper
