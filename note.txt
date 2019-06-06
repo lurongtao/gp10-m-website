@@ -79,3 +79,26 @@ Yo reset, border, ellipsis
 
 9、JS库
 zepto, better-scroll, swiper
+
+安装nginx
+一、mac
+1、登录https://brew.sh/, 安装homebrew: 
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+2、brew install nginx
+
+二、启动服务
+start nginx
+nginx -s stop
+
+server {
+  listen 8080;
+  server_name localhost;
+  root /Users/felix/Desktop/m-website/dist;
+  index index.html;
+
+  location ~* /api {
+    rewrite /api/(.*) /$1 break;
+    proxy_pass https://m.lagou.com;
+  }
+}

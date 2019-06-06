@@ -361,7 +361,7 @@ eval("module.exports = \"{{each data}}  <li data-id=\\\"{{$value[\\'positionId\\
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("module.exports = \"<div>  profile</div>\"\n\n//# sourceURL=webpack:///./src/views/profile.html?");
+eval("module.exports = \"<div>profile</div>\"\n\n//# sourceURL=webpack:///./src/views/profile.html?");
 
 /***/ }),
 
